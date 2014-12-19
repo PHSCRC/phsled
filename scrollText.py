@@ -2,7 +2,7 @@
 
 import time
 import datetime
-from Adafruit_8x8 import EightByEight
+from Adafruit_LEDBackpack.Adafruit_8x8 import EightByEight
 from LEDListCreate import EightBySixteen
 
 
