@@ -1,6 +1,8 @@
-# PHSCRC LED Matrix Project
-Download and setup the code from the [Adafruit-Raspberry-Pi-Python-Code](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/) repository. Make sure wget and unzip are installed. Use the following commands or run setup.sh.
-```bash
+#!/bin/bash
+
+# Downloads code from https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/
+# and sets it up to work with the PHSCRC LED Matrix Project code
+
 # download
 wget https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/archive/master.zip
 # unzip
@@ -12,4 +14,3 @@ touch adafruitledbackpack/__init__.py
 # clean up
 rm -r Adafruit-Raspberry-Pi-Python-Code-master
 rm master.zip
-```
