@@ -13,3 +13,4 @@ touch adafruitledbackpack/__init__.py
 rm -r Adafruit-Raspberry-Pi-Python-Code-master
 rm master.zip
 ```
+I2C must also be enabled in raspi-config.
