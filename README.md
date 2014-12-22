@@ -6,7 +6,7 @@ wget https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/archive/maste
 # unzip
 unzip master.zip
 # move around
-cp -rL Adafruit-Raspberry-Pi-Python-Code-master/Adafruit_LEDBackpack/ adafruitledbackpack
+cp -RL Adafruit-Raspberry-Pi-Python-Code-master/Adafruit_LEDBackpack/ adafruitledbackpack
 # create __init__.py
 touch adafruitledbackpack/__init__.py
 # clean up
