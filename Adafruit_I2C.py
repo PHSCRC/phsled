@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import smbus
+import sys
 
 # ===========================================================================
 # Adafruit_I2C Class
@@ -47,7 +48,7 @@ class Adafruit_I2C(object):
     return val
 
   def errMsg(self):
-    print "Error accessing 0x%02X: Check your I2C address" % self.address
+    sys.stderr.write("Error accessing 0x%02X: Check your I2C address\n" % self.address)
     return -1
 
   def write8(self, reg, value):

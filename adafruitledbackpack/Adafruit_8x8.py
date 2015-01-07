@@ -3,6 +3,7 @@
 import time
 import datetime
 from Adafruit_LEDBackpack import LEDBackpack
+
 # ===========================================================================
 # 8x8 Pixel Display
 # ===========================================================================
@@ -29,12 +30,12 @@ class EightByEight:
 
   def setPixel(self, x, y, color=1):
     "Sets a single pixel"
-    if (x >= 16):
+    if (x >= 8):
       return
     if (y >= 8):
       return    
-    #x += 7   # ATTN: This might be a bug?  On the color matrix, this causes x=0 to draw on the last line instead of the first.
-    x %= 16
+    x += 7   # ATTN: This might be a bug?  On the color matrix, this causes x=0 to draw on the last line instead of the first.
+    x %= 8
     # Set the appropriate pixel
     buffer = self.disp.getBuffer()
     if (color):
