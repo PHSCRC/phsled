@@ -7,7 +7,7 @@ from timeit import default_timer
 grids = [LEDBackpack(address=i) for i in range(0x70, 0x74)]
 
 wait_time = float(sys.argv[2] if len(sys.argv) > 2 else raw_input("Wait time: "))
-text = (sys.argv[1] if len(sys.argv) > 1 else raw_input("What should I scroll: ")).upper()
+text = sys.argv[1] if len(sys.argv) > 1 else raw_input("What should I scroll: ")
 printcon = textTo2D(text)
 
 print "Press CTRL+C to exit"
