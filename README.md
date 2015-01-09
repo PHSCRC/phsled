@@ -1,16 +1,7 @@
-# PHSCRC LED Matrix Project
-Download and setup the code from the [Adafruit-Raspberry-Pi-Python-Code](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/) repository. Make sure wget and unzip are installed. Use the following commands or run setup.sh.
-```bash
-# download
-wget https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/archive/master.zip
-# unzip
-unzip master.zip
-# move around
-cp -RL Adafruit-Raspberry-Pi-Python-Code-master/Adafruit_LEDBackpack/ adafruitledbackpack
-# create __init__.py
-touch adafruitledbackpack/__init__.py
-# clean up
-rm -r Adafruit-Raspberry-Pi-Python-Code-master
-rm master.zip
-```
-I2C must also be enabled in raspi-config.
+# PHS Computer & Robotics Club LED Matrix Project
+
+I2C must be enabled in raspi-config, and the smbus module installed.
+
+Usage: `sudo python scrollText.py "message" wait_time`
+
+Piping stderr to `/dev/null` with `2>/dev/null` is reccomended if you do not have all four I2C devices connected.
