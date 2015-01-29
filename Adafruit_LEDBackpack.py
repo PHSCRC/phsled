@@ -39,7 +39,7 @@ class LEDBackpack:
     self.setBlinkRate(self.__HT16K33_BLINKRATE_OFF)
 
     # Set maximum brightness
-    self.setBrightness(0) #originally 15
+    self.setBrightness(3) #originally 15
 
     # Clear the screen
     self.clear()
