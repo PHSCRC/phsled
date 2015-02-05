@@ -14,7 +14,7 @@ print "Press CTRL+C to exit"
 
 def main():
   scrolled = 0
-  while(True):
+  while True:
     start = default_timer()
     for y, v in enumerate(printcon):
       buffers = [0x00, 0x00, 0x00, 0x00]
@@ -35,6 +35,8 @@ def main():
     scrolled += 1
     if scrolled >= len(printcon[0]) / 2 + 6:
       scrolled = 0
+      if "--once" in sys.argv:
+        exit(0)
 
 if __name__ == "__main__":
   try:
